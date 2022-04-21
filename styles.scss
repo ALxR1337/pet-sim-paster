@@ -1,0 +1,121 @@
+*{
+    cursor: default;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+.main-label{
+    color: rgb(197, 197, 197);
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    animation: title 2s;
+}
+.container{
+    margin-bottom: 0px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__lables{
+    animation: login__lables 4s;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    & lable{
+        animation: login__lable 4s;
+        color: rgb(197, 197, 197);
+        &:not(:last-child){
+            margin-right: 150px;
+        }
+    }
+}
+input{
+    color: rgb(197, 197, 197);
+    background-color: transparent;
+    border: 1px rgb(77, 77, 77) solid;
+    outline: none;
+    animation: inputs 4s;
+    cursor: text;
+    height: 20px;
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+}
+.login__btn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: #0000e6;
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+    cursor: pointer;
+    animation: button 4s;
+    &:hover {
+        background-color: #000094;    
+        tansition: all .3s linear;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear; 
+    }
+}
+@keyframes title{
+    0%{
+        margin-top: 8.5%;
+        color: transparent;
+    }
+    100%{
+        margin-top: 10%;
+        color: rgb(197, 197, 197);
+    }
+}
+@keyframes login__lable{
+    0%{
+        color: transparent;
+    }
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: rgb(197, 197, 197);
+    }
+}
+@keyframes login__lables{
+    0%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 20px;
+    }
+}
+@keyframes inputs{
+    0%{
+        border: none;
+        cursor: default;
+    }
+    50%{
+        border: none;
+        cursor: default;
+    }
+    100%{
+        cursor: default;
+    }
+}
+@keyframes button{
+    0%{
+        background-color: transparent;
+        color: transparent;
+    }
+    50%{
+        background-color: transparent;
+        color: transparent;
+    }
+    100%{
+        background-color: #0000e6;
+        color: rgb(197, 197, 197);
+    }
+}
