@@ -211,4 +211,22 @@ input:not(:last-child) {
     color: #c5c5c5;
   }
 }
+
+@media (max-width: 400px) {
+  input {
+    width: 140px;
+  }
+  .login__lables lable:not(:last-child) {
+    margin-right: 120px;
+  }
+}
+
+@media (max-width: 325px) {
+  input {
+    width: 130px;
+  }
+  .login__lables lable:not(:last-child) {
+    margin-right: 110px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

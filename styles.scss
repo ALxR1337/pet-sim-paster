@@ -119,3 +119,27 @@ input{
         color: rgb(197, 197, 197);
     }
 }
+@media (max-width: 400px){
+    input{
+        width: 140px;
+    }
+    .login__lables{
+        & lable{
+            &:not(:last-child){
+                margin-right: 120px;
+            }
+        }
+    }
+}
+@media (max-width: 325px){
+    input{
+        width: 130px;
+    }
+    .login__lables{
+        & lable{
+            &:not(:last-child){
+                margin-right: 110px;
+            }
+        }
+    }
+}
